@@ -39,5 +39,5 @@ String func(int a, int b, int c) {
 }
 
 void main() {
-  print(func(1, 2, -4));
+  print(func(1, -2, -4));
 }
