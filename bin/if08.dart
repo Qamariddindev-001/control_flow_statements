@@ -10,5 +10,23 @@
         a: integer
     Returns:
         string: the message to print */
+String func(int number) {
+  String s = '';
+  if (number > 9 && number ~/ 100 == 0 && number % 2 == 1) {
+    s = 'two-digit odd number';
+  }
+  if (number > 9 && number ~/ 100 == 0 && number % 2 == 0) {
+    s = 'two-digit even number';
+  }
+  if (number > 99 && number ~/ 1000 == 0 && number % 2 == 1) {
+    s = 'three-digit odd number';
+  }
+  if (number > 99 && number ~/ 1000 == 0 && number % 2 == 0) {
+    s = 'three-digit even numbe';
+  }
+  return s;
+}
 
-void main() {}
+void main() {
+  print(func(333));
+}

@@ -9,5 +9,16 @@
         a: integer
     Returns:
         boolean: True if the resulting number is less than or equal to the old number, otherwise return False. */
+bool func(int a) {
+  int b;
+  int s;
+  s = a % 10;
+  b = a ~/ 10;
+  b = s * 10 + b;
 
-void main() {}
+  return b <= a;
+}
+
+void main() {
+  print(func(40));
+}
